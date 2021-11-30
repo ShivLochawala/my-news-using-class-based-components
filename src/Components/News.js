@@ -66,7 +66,7 @@ export class News extends Component {
     render() {
         return (
             <>
-                <h1 className="text-center text-capitalize my-5" >myNews - Top {this.props.category} Headlines</h1>
+                <h1 className="text-center text-capitalize my-5 mx-5" >myNews - Top {this.props.category} Headlines</h1>
                 {this.state.loading && <Loader/>}
                 <InfiniteScroll
                 dataLength={this.state.articles.length}
